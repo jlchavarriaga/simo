@@ -1,4 +1,5 @@
 # main.py
+from data_analitics import filtrar_y_ordenar_por_palabra_clave
 from data_extractor import DataExtractor
 import os
 from dotenv import load_dotenv
@@ -29,4 +30,5 @@ def save_data():
     extractor.recorrer_paginas(numero_convocatoria, total_paginas, output_file='resultados.json')
 
 if __name__ == "__main__":
-    save_data()
+    # save_data()
+    filtrar_y_ordenar_por_palabra_clave('resultados.json', 'resultados_filtrados.json', 'ADMINISTRACION')

@@ -7,6 +7,9 @@ Servicio para busqueda mas eficiente de los cargos en la plataforma SIMO
 2. Entrar al entorno con: `venv/scripts/activate`
 3. Instalar las dependencias con: `pip install -r requirements.txt`
 4. Ejecutar main.py con: `python main.py`
+    4.1 Guardar la data
+    4.2 Filtrar de acuerdo a valores
+5. Numero de inscritos. (pendiente!)
 
 # Desarrollo
 0. 3. Ejecutar desde la terminal `python.exe -m pip install --upgrade pip`
