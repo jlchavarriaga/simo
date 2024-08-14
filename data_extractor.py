@@ -1,5 +1,5 @@
 #data_extractor.py
-
+import time
 import requests
 import os
 from dotenv import load_dotenv
@@ -97,6 +97,7 @@ class DataExtractor:
             if data:
                 datos_extraidos = self.extraer_datos(data)
                 all_data.extend(datos_extraidos)
+            time.sleep(2)
 
         # Guardar todos los datos extraídos en un archivo JSON
         with open(output_file, 'w', encoding='utf-8') as file:
